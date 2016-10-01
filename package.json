@@ -1,0 +1,27 @@
+{
+  "name": "21APP",
+  "version": "1.0.0",
+  "description": "Safe Space is working on an app that allows for users to anonymously share, stare, and be aware of their habits to root and resolve the matter. ",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "express-handlebars": "^3.0.0",
+    "method-override": "^2.3.6",
+    "mysql": "^2.11.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iwantclarity/21App.git"
+  },
+  "author": "Safe Space",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iwantclarity/21App"
+  },
+  "homepage": "https://github.com/iwantclarity/21App#readme"
+}
