@@ -1,51 +1,207 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+  <title>21 app</title>
 
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="21, habits, help, support, app, habit breaking app, quit smoking, get help, 21 days">
-    <meta name="author" content="safe space">
-
-		<!--Style Sheets-->
-		<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-
-		<!-- Google Fonts -->
-		<link href="https://fonts.googleapis.com/css?family=Amatic+SC|Lobster|Yellowtail" rel="stylesheet">
-
-		<!--Import materialize.css-->
-		<link type="text/css" rel="stylesheet" href="assets/css/materialize.min.css"  media="screen,projection"/>
-
-		<!--Let browser know website is optimized for mobile-->
-		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-
-		<!-- amCharts javascript sources -->
-    <script type="text/javascript" src="https://www.amcharts.com/lib/3/amcharts.js"></script>
-    <script type="text/javascript" src="https://www.amcharts.com/lib/3/serial.js"></script>
-
-    <!-- CSS for Materialize and animate -->
-		<link type="text/css" rel="stylesheet" href="assets/css/materialize.min.css" media="screen,projection" />
-    <link rel="stylesheet" href="animate.css">
-
-    <!-- Custom styles for this template -->
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-
-  </head>
-    <title>21app</title>
-  <body>
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 
 
+</head>
+<body>
+  <nav class="purple darken-3 z-depth-2" role="navigation">
+    <div class="nav-wrapper container text-white">
+      <a id="logo-container" href="#" class="brand-logo"> </a>
+      <ul class="right hide-on-med-and-down text-white">
+      <ul class="right hide-on-med-and-down text-white">
+        <li><a href="#">What is 21?</a></li>
+      </ul>
 
-		<!-- jQuery is required by Materialize to function -->
-		<script src="https://code.jquery.com/jquery-2.2.3.min.js" integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous"></script>
+      <ul id="nav-mobile" class="side-nav">
+        <li><a href="#">Log In</a></li>
+      </ul>
+      <ul id="nav-mobile" class="side-nav">
+        <li><a href="#">Sign Up</a></li>
+      </ul>
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons ">menu</i></a>
+    </div>
+  </nav>
 
-		<!--Import jQuery before materialize.js-->
-	  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-	  <script type="text/javascript" src="assets/js/materialize.min.js"></script>
+  <div id="index-banner" class="parallax-container z-depth-1">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <br><br>
+        <div class="row center">
+        </div>
+        <br><br>
 
-		<!-- Custom javascript -->
-		<script type="text/javascript" src="assets/js/custom.js"></script>
+      </div>
+    </div>
+    <div class="parallax"><img src="images/background1.jpg" alt="Unsplashed background img 1"></div>
+  </div>
+
+
+  <div class="container" id="options">
+    <div class="section">
+
+      <!--   log in   -->
+      <div class="row">
+      <div class="col s12 center white">
+          <ul class="collapsible" data-collapsible="accordion">
+            <h2 class="center purple-text text-darken-3">
+              <i class="material-icons itopnav medium">perm_identity</i></h2>
+            <li>
+              <div class="collapsible-header">
+                <h5 class="center padding-20">Log In</h5>
+              </div>
+              <div class="collapsible-body">
+
+                <div class="input-field col s12">
+                      <input id="email" type="email" class="validate">
+                      <label for="email">Email</label>
+                </div>
+
+                <div class="input-field col s12">
+                    <input id="password" type="password" class="validate">
+                    <label for="password">Password</label>
+                </div>
+
+                    <label>Habit To Break:</label>
+                        <select class="browser-default center">
+                          <option value="" disabled selected class="center">Select</option>
+                          <option value="smoking">Smoking</option>
+                          <option value="shopping">Shopping</option>
+                          <option value="technology">Technology</option>
+                        </select>
+
+
+                        <form action="#">
+                            <p class="center">
+                              <input type="checkbox" id="smoking" />
+                              <label for="smoking">I agree to the terms & conditions</label>
+                            </p>
+
+                <button id="login" class="btn waves-effect waves-light center collapsible purple darken-3" data-collapsible="expandable" type="submit" name="action">Sign Up
+                <i class="material-icons left">check_circle</i>
+                <br>
+
+              </div> <!--end of dropdown-->
+            </li>
+          <p class="light center"><i>Sign in to your account.</i></p>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+        <div class="row">
+        <!-- sign up -->
+        <div class="col s12 center white">
+            <ul class="collapsible" data-collapsible="accordion">
+              <h2 class="center purple-text text-darken-3">
+                <i class="material-icons itopnav medium">add_circle</i></h2>
+              <li>
+                <div class="collapsible-header">
+                  <h5 class="center padding-20">Sign Up</h5>
+                </div>
+                <div class="collapsible-body">
+
+                  <div class="row">
+                      <div class="input-field col s6">
+                        <input id="first_name" type="text" class="validate">
+                        <label for="first_name">First Name</label>
+                      </div>
+                      <div class="input-field col s6">
+                        <input id="last_name" type="text" class="validate">
+                        <label for="last_name">Last Name</label>
+                      </div>
+                    </div>
+
+                  <div class="input-field col s12">
+                        <input id="email" type="email" class="validate">
+                        <label for="email">Email</label>
+                  </div>
+
+                  <div class="input-field col s12">
+                      <input id="password" type="password" class="validate">
+                      <label for="password">Password</label>
+                  </div>
+
+                      <label>Habit To Break:</label>
+                          <select class="browser-default center">
+                            <option value="" disabled selected class="center">Select</option>
+                            <option value="smoking">Smoking</option>
+                            <option value="shopping">Shopping</option>
+                            <option value="technology">Technology</option>
+                          </select>
+
+
+                          <form action="#">
+                              <p class="center">
+                                <input type="checkbox" id="smoking" />
+                                <label for="smoking">I agree to the terms & conditions</label>
+                              </p>
+
+                  <button id="login" class="btn waves-effect waves-light center collapsible purple darken-3" data-collapsible="expandable" type="submit" name="action">Sign Up
+                  <i class="material-icons left">check_circle</i>
+                  <br>
+
+                </div> <!--end of dropdown-->
+              </li>
+            <p class="light center"><i>Create a new account.</i></p>
+          </div>
+        </div>
+      </div>
+
+
+        <div class="row">
+        <!-- info -->
+        <div class="col s12 center white">
+            <div class="icon-block">
+              <h2 class="center white-text purple-text text-darken-3"><i class="material-icons">info</i></h2>
+              <button id="info" class="btn waves-effect waves-light center collapsible" data-collapsible="expandable" type="submit" name="action">Learn More
+                <i class="material-icons right">send</i>
+              </button>
+              <p class="light center">Learn how 21 works.</p>
+            </div>
+        </div>
+
+      </div> <!-- end of row -->
+    </div> <!-- end of section -->
+  </div> <!-- end of container -->
+
+
+
+  <footer class="page-footer purple darken-3">
+    <div class="container">
+      <div class="row">
+        <div class="col l12 s12">
+          <img src="images/safe-space-sml.png" alt="safe space logo">
+          <p class="grey-text text-lighten-4">At Safe Space we provide high tech solutions to gritty human problems; completely secure, totally successful. Sign up with one of our popular life changing apps today.</p>
+        </div>
+
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      Copyright 2016 <a class="brown-text text-lighten-3" href="http://safespace.com">Safe Space</a>
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
   </body>
 </html>
