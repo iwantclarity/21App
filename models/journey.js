@@ -1,8 +1,7 @@
 'use strict';
 module.exports = function(sequelize, DataTypes) {
   var Journey = sequelize.define('Journey', {
-    userId: DataTypes.INTEGER,
-    habbit: DataTypes.STRING,
+    habit: DataTypes.STRING,
     needsHelp: DataTypes.INTEGER
   }, {
     classMethods: {
