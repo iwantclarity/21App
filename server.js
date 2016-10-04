@@ -56,4 +56,17 @@ require('./app/routing/html-routes.js')(app);
 
 app.listen(PORT, function() {
 	console.log("App listening on PORT: " + PORT);
+}
+
+//var models = require("./models");
+//var User = require("./models")["User"];
+
+//models.sequelize.sync().then(function () {
+	 // Users.create({
+	 // 		userEmail: "email@email.com",
+  //           userName: "dave",
+  //           userPassword: "password",
+  //           uId: "123"
+  //       });
+ //});
 });
