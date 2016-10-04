@@ -1,35 +1,11 @@
-/*
-Here is where you set up your server file.
-express middleware.
-*/
+var models = require("./models");
+var User = require("./models")["User"];
 
-var express = require('express');
-var bodyParser = require('body-parser');
-var methodOverride = require('method-override')
-var express = require('express');
-var path = require('path');
-var logger = require('morgan');
-
-var app = express();
-
-//Serve static content for the app from the "public" directory in the application directory.
-app.use(express.static(process.cwd() + '/public'));
-
-var users_controller = require('./controllers/user-actions');
-
-app.use(bodyParser.urlencoded({
-  extended: false
-}))
-// override with POST having ?_method=DELETE
-app.use(methodOverride('_method'))
-var exphbs = require('express-handlebars');
-app.engine('handlebars', exphbs({
-    defaultLayout: 'main'
-}));
-app.set('view engine', 'handlebars');
-
-// require("routes/api-routes.js")(app)
-// require("routes/html-routes.js")(app)
-
-var port = 3000;
-app.listen(port);
+models.sequelize.sync().then(function () {
+	 // Users.create({
+	 // 		userEmail: "email@email.com",
+  //           userName: "dave",
+  //           userPassword: "password",
+  //           uId: "123"
+  //       });
+});
