@@ -6,7 +6,6 @@
  * Made By MaterializeCSS.com
  */
 
-nav ul a,
 nav .brand-logo {
   color: #ffffff;
 }
@@ -76,4 +75,17 @@ footer.page-footer {
   font-size: 25px;
   height: 25px;
   line-height: 25px;
+}
+
+.navi {
+  align-items: center;
+  margin-left: 45px;
+}
+
+.purplelink {
+  color: #6a1b9a;
+}
+
+.whitelink {
+  color: #ffffff;
 }
