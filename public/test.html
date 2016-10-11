@@ -1,0 +1,49 @@
+	<html>
+
+	<body>
+
+<form class="create-update-form" action="/users/create" method="POST">
+  <div class="form-group">
+    <label for="un">Username:</label>
+    <input type="text" id="un" name="username">
+  </div>
+
+  <div class="form-group">
+    <label for="em">Email:</label>
+    <input type="text" id="em" name="email">
+  </div>
+
+  <div class="form-group">
+    <label for="pass">Password:</label>
+    <input type="password" id="pass" name="password">
+  </div>
+
+  <button type="submit">Sign Up!</button>
+</form>
+
+
+<!-- 	<script>
+	// define sign in function
+	function signIn(){
+		// grab data from form
+		var data = {
+			username: $('#username').val().trim(),
+			password: $('#password').val().trim()
+		}
+		// grab url to ajax call
+		var currentURL = window.location.origin + "/api/auth";
+
+		// post our login data
+		$.post(currentURL, data, function(results){
+			console.log(results);
+		});
+	}
+
+	// define call on button
+	$(document).on('click', '#submit', function(){
+		// sign in
+		signIn();
+		// prevent default behavior
+		return false;
+	})
+	</script> -->
