@@ -39,8 +39,8 @@ app.use(bodyParser.json({type:'application/vnd.api+json'}));
 // These routes give our server a "map" of how to respond when users visit or request data from various URLs. 
 // ================================================================================
 
-require('./app/routing/api-routes.js')(app); 
-require('./app/routing/html-routes.js')(app);
+require('./routes/auth-routes.js')(app); 
+require('./routes/html-routes.js')(app);
 
 
 
@@ -56,7 +56,7 @@ require('./app/routing/html-routes.js')(app);
 
 app.listen(PORT, function() {
 	console.log("App listening on PORT: " + PORT);
-}
+});
 
 //var models = require("./models");
 //var User = require("./models")["User"];
@@ -68,9 +68,6 @@ app.listen(PORT, function() {
   //           userPassword: "password",
   //           uId: "123"
   //       });
-<<<<<<< HEAD
+
  //});
-});
-=======
-});
->>>>>>> master
+
